@@ -1,0 +1,670 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE4E1;  /*#CD5C5C -> másik szín*/
+    font-family: 'Oswald', sans-serif;
+}
+#main{
+    background-color:rgba(141, 7, 7, 1);
+    height: 22.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:center;
+    min-width: 175px;
+}
+#navimg{
+    order:1;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    height: 55%;
+    width: 100%;
+}
+#navimg img{
+    display:block;
+    margin-left:5%;
+    margin-top:5%;
+    height: 100%;
+}    
+
+#navtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    order:2;
+    color: lightgrey;
+    height: 45%;
+    width: 100%;
+}
+#navtext h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.gomb{
+    margin-right:5%;
+    margin-top: 5%;
+    height: 100%;
+    width: 10%;
+    border: none;
+    background-color:rgba(141, 7, 7, 1);
+    color:rgb(192, 192, 192);
+    font-size:6vh;
+    
+}
+#menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:60%;
+    background-color: grey;
+    width: 40%;
+    height: 80vh;
+    position: absolute;
+    min-width: 175px;
+    margin-right: 5%;
+}
+#menu ul{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+#menu ul li{
+    border-bottom: 1px solid rgb(169, 167, 167);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu #current a{
+    color:black;
+}
+#menu ul li a:link, #menu ul li a:visited{
+    color:white;
+    text-align: center;
+    font-size: 4vh;
+}
+
+#menu.aktiv{
+    display: flex;
+}
+.teljes_kep, .also{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    min-width: 175px;
+}
+.teljes_kep img, .also img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.also{
+    height: 140vh;
+}
+
+/*MENU-eleje*/
+#foszovegblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    min-width: 175px;
+    gap:100px;
+    margin:30px
+}
+#foszovegcim,#jelentkezes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#egymas_melle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px;
+}
+#egymas_melle article{
+    text-align: center;
+}
+
+#foszovegcim{
+    font-size: 32px;
+    margin: 0 5vh;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+#foszoveg_bal{
+    font-size: 18px;
+    margin: 0 5vh;
+    font-style: italic;
+}
+#jelentkezes{
+    font-size: 28px;
+    margin: 0 5vh;
+}
+.formazotthiv{
+    margin-top:3vh;
+    margin-bottom:5vh;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 1.5vh;
+    border-radius: 10px;
+}
+.formazotthiv a:hover{
+    color:black;
+    background-color: rgb(164, 4, 4);
+}
+#foszovegblock #egymas_melle #jelentkezes a:hover {
+    color:black;
+    background-color: rgb(164, 4, 4);
+}
+/*MENU-vege*/
+/*SF-eleje*/
+section.info_kulso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10%;
+    margin-bottom :8%;
+    flex: 1 1 100%;
+
+}
+.info_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 20%;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.info_szoveg{
+    height: 80%;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 20px;
+
+}
+#yt_sor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:4%;
+    flex-wrap: wrap;
+}
+#yt_sor p{
+    font-style: italic;
+}
+#yt_sor a{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 0 8px;
+}
+.slider {
+    width: 60%;
+    min-width: 400px;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: rgba(141, 7, 7, 1);
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .3;
+}
+
+.slick-active {
+    opacity: .6;
+}
+
+.slick-current {
+    opacity: 1;
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+}
+
+.slick-prev {
+        left: -50px;
+}
+.slick-next {
+        right: -30px;
+}
+
+/*SF-vege*/
+/*JELENTKEZES-eleje*/
+
+#szoveg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 100px 30px 30px 30px;
+    height: 150px;
+    width: auto;
+    text-align: center;
+    
+}
+#szoveg p{
+    font-size: 20px;
+}
+.ingyenes{
+    margin: 12px 30px;
+    font-size: 20px;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 15px;
+}
+.bmi_hossz{
+    width:100px;
+}
+
+#mertekegyseg{
+    width: 45px;
+    height: 40px;
+}
+input[type="number"]{
+    width:70px;
+    height:25px;
+    margin:10px;
+
+}
+
+#jelentkezes_szoveg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#infok_aside{
+    background-color: rgb(190, 190, 190);
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    margin: 30px 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#urlap{
+    margin: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.szurke{
+    color:rgb(109, 109, 109);
+    font-size: 14px;
+}
+.iras{
+    height: 30px;
+}
+.kuldes{
+    margin-right: 20px;
+    background-color: rgba(141, 7, 7, 1);
+    border:none;
+    padding: 15px 10px;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.gombok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    width: 100%;
+}
+input.kuldes:hover{
+    background-color:rgb(155, 155, 155);
+    color:rgb(38, 38, 38);
+}
+textarea#etel{
+    resize:none;
+    height: 40px;
+    width: 140px;
+}
+textarea.hosszu {
+    resize: none;
+    height: 80px;
+    width: 85%
+  }
+#aktivitas{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+}
+label.error {
+    color: rgb(174, 9, 9);
+    display: block;
+    margin-left:8px;
+    font-weight: bold;
+   }
+/*JELENTKEZES-vege*/
+/*ROLAM-eleje*/
+section#rolam_kulso{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#rolam_szoveg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+#rolam_szoveg h2, #rolam_szoveg p{
+    text-align: justify;
+    margin: 20px 40px;
+    font-size: 18px;
+}
+#rolam_szoveg h2{
+    font-size: 28px;
+}
+#en_kep img{
+    height: auto;
+    width: 30vh;
+    border:rgba(141, 7, 7, 1) solid 5px;
+    margin-top: 20px
+}
+#en_kep{
+    margin: 20px;
+    order:-1;
+}
+#en_kep figcaption{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+/*ROLAM-vege*/
+.alja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgba(97, 97, 97, 0.5);
+    min-width: 175px;
+    order:1
+}
+.alja a{
+    color:rgb(68, 68, 68);
+
+}
+.alja i{
+    margin-right:1vh ;
+}
+
+@media only screen and (min-width: 600px) {
+    /*MENU-eleje*/
+    #foszovegblock, #egymas_melle{
+        margin-top:40px;
+        height: 80vh;
+    } 
+    #egymas_melle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    #foszoveg_jobb{
+        text-align: center;
+    }
+    /*MENU-vege*/
+    /*SF-eleje*/
+
+    /*SF-vege*/
+    /*Jelentkezes-eleje*/
+    #szoveg{
+        margin-top:30px;
+    }
+    .gombok{
+        width: 35%;
+        margin: auto;
+
+    }
+    /*Jelentkezes-vege*/
+    /*RÓLAM-eleje*/
+    #rolam_szoveg h2, #rolam_szoveg p{
+        margin: 20px 120px;
+
+    }
+    /*ROLAM-vege*/
+.alja{
+    justify-content: center
+}
+.alja a{
+    padding: 0 15px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+    #main{
+        height: 100px;
+        flex-direction: row;
+    }
+    #navimg{
+        height: 80%;
+    }
+    #main #navimg img{
+        margin-left: 35%;
+    }
+    #navtext{
+        height: 75%;
+        
+    }
+    #navtext h1{
+        font-size: 52px;
+        margin-right: 100%;
+    }
+    .gomb{
+        display: none;
+    }
+    nav#main_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+        background-color: gray;
+    
+    }
+    #main #main_nav #menu{
+        text-align: center;
+    }
+    #menu{
+        position:static;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content:flex-start;
+        height: 50%;
+        width:500px;
+        background-color: transparent;
+    }
+    #menu ul{
+        flex-direction:row;
+        justify-content: space-between;
+        width:100%;
+    }
+    #main_nav #menu ul li{
+        height: 5vh;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin: 0 10px;
+        background-color: gray;
+    }
+    #menu ul li#current{
+        background-color: rgb(56, 56, 56);
+    }
+    #main_nav #menu ul li a{
+        padding: 0 10px;
+        font-size: 24px;
+        height: 100%;
+        width: 100%;
+    }
+    #menu #current a{
+        color:rgb(148, 148, 148)
+    }
+    #menu #current a:hover, #menu ul li a:hover, #main_nav #menu ul li:hover{
+        color:black;
+        background-color: rgb(164, 4, 4);
+    }
+    
+    #navimg img{
+        margin-left:15%;
+        margin-top:0;
+    }
+    /*SF-eleje*/
+    #kulso{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+    section.info_kulso{
+        flex-basis: 30%;
+        margin:5%;
+    }
+    .info_head{
+        margin: 3% 3% 3% 3%;
+        justify-content: flex-start;
+        font-size: 36px;
+    }
+    .info_szoveg{
+        margin-top:0;
+        margin-left:3%;
+        margin-right:3%;
+        font-size: 20px;
+        padding: 0 5% 5% 5%;
+        justify-content: flex-start;
+        text-align: justify;
+
+    }
+    .jq{
+        order:-1;
+        margin-top:60px;
+        flex-basis: 50%;
+    }
+    .slick-prev{
+        display: none;
+    }
+
+
+
+    
+    .kepek{
+        width: 70%;
+    }
+    .kepek img{
+        object-fit: cover;
+    }
+    /*SF-vege*/
+    /*Jelentkezés-eleje*/
+    section.ingyenes{
+        width: 30%;
+        align-self: center;
+    }
+    #jelentkezes_szoveg{
+        flex-direction: row;
+        align-items:flex-start;
+        gap:10px
+    }
+    #infok_aside{
+        order:1;
+        align-self: flex-start;
+        margin-top: 0;
+    }
+    #urlap{
+        text-align: left;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .gombok{
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .kuldes{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #infok_aside{
+        width: 40%;
+        align-self: center;
+    }
+    /*Jelentkezés-vege*/
+    /*Rolam-eleje*/
+    section#rolam_kulso{
+        flex-direction: row;
+        margin-top: 80px;
+        margin-bottom: 150px;
+    }
+    section#rolam_szoveg{
+        width: 60%;
+        margin-right:100px
+}
+    #en_kep{
+        order:1;
+        width: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;            
+        text-align: center;
+    }
+    #en_kep figcaption{
+        order:-1;
+        margin-top:20px;
+    }
+    
+    #rolam_szoveg h2, #rolam_szoveg p{
+        margin: 20px 40px;
+
+    }
+}
+        
+    /*Rolam-vege*/
+
