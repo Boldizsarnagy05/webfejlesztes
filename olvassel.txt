@@ -1,15 +1,29 @@
 1, Nagy Boldizsar
 
-2, URL cím:
+2, URL cím: https://boldizsarnagy05.github.io/webfejlesztes/
 
-3, A weblapom az erőemelő edzősködés köré épül. Az erőemelésben, mint sportban, rendkívül fontos, hogy megfelelő szaktudású, és alapos edzős találjanak, ezért elkészítettem a saját oldalamat, hogy többen meg tudjanak találni.
+(https://boldizsarnagy05.github.io/webfejlesztes/index.html)
 
-4, 3 db JS kód található a weboldalon. Az első kettő nagyon hasonló, a "Jelentkezés" fülön, az elküldés gombra kattintva felül egy előugró ablakot hoz be, alerttal. Ugyanez igaz az "Alapértelmezett" gombra is. A harmadik JS kód az összes oldalon megtalálható, ugyanis ez a hamburger menu. A kód id alapján megkeresi az obkejtumot, majd a toggle paranccsal hozzáadja vagy elveszi az adott classt. A classnak display eleme miatt megjelenik vagy eltűnik a menu.
+3, A weblapom az erőemelő edzősködés köré épül, ahol bemutatom a termet ahol edzést tartok és edzem, fel lehet velem venni a kapcsolatot, valamint pár szót írok magamról. Az erőemelésben, mint sportban, rendkívül fontos, hogy megfelelő szaktudású, és alapos edzős találjanak, ezért elkészítettem a saját oldalamat, hogy többen meg tudjanak találni.
 
+4, A weboldalon 3 JS kód található. Az első egy hamburger menu, mely kattintásra megjelenít/eltűntet egy ablakot. A második egy onerapmax kalkulátor, amely adott súly és adott ismétlés alapján kiszámolja az a súly amellyel csak 1 ismétlésre képes. A hamradik kód egy BMI kalkulátor, amely nem, métrékegység, kor, súly, magasság és aktivitás alapján kiszámolja a BMI-t, bekategorizálja az adott illetőt 5 csoportba, ételajánlásokat ad, valamint kiszámolja a BMR (basic matebolic rate) és a napi energiaszukségletet.
 
 5, Betűtípus
 Innen szedtem: https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap
 Ezeket használtam: 'Oswald', sans-serif (ezek közül az Oswaldot szedtem, a másik cask abban az esetben hasznos ha valamiért nem töltődik be az első lehetőség)
 
-6, ---
+6, Három kódot vettem, az összeset a ChatGPT-től
+Az első a JS hamburgermenű ötlete és a kód (2 soros kód), az elrendezés, megvalósítás már saját ötlet
+A második a következő: errorPlacement: function(error, element) {
+                if (element.attr("name") === "lehetoseg") {
+                    
+                    error.insertAfter("#lehetosegnem");
+                } else {
+                    
+                    error.insertAfter(element);
+                }
+            }
+Ez a jelentkezés rész alján található és a felugró felirat így nem az "igen" rádió gomb mellett hanem a "nem" mellett fog megjelenni.
+A harmadikat pedig <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+Ez az ikonok megjelenítésére volt segítségemre.
 
